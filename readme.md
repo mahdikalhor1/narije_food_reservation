@@ -11,5 +11,5 @@
 
 To run the script with all options enabled:
 ```sh
-python reserve_food.py --username PHONE_NUM --password PHONE_NUM --include-thursdays --lazy-mode
+python reserve.py --username PHONE_NUM --password PHONE_NUM --include-thursdays --lazy-mode
 
