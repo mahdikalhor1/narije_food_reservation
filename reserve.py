@@ -62,11 +62,11 @@ async def main(username, password, include_thursdays, lazy_mode):
         current_date = start_date + datetime.timedelta(days=day)
         current_date_str = current_date.strftime("%Y-%m-%dT00:00:00")
 
-        if current_date.weekday() == 4 and not include_thursdays:
+        if current_date.weekday() == 3 and not include_thursdays:
             print(f"Skipping Thursday: {current_date_str}")
             continue
         # Skip Fridays
-        if current_date.weekday() == 5:
+        if current_date.weekday() == 4:
             continue
 
         reserves_response = get_reserves(token, current_date_str)
